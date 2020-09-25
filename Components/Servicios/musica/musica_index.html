@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Modulo musica" />
+        <meta name="keywords" content="musica, playlist, team5" />
+        <meta name="author" content="grupo 5" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Música</title>
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Encabezado del módulo-->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <p id="titulo-Servicio">Play list [reunión]</p>
+            </div>
+            <!-- Título y autor de la canción-->
+            <div class="row">
+                <div class="col">
+                    <h2 id="titulo-cancion">--</h2>
+                    <h6 id="autor-cancion">-</h6>
+                </div>
+            </div>
+
+            <!-- Botones de acción de canción-->
+            <div class="row justify-content-between play-buttons">
+                <button type="button" class="btn" onclick="anterior_cancion()"><<</button>
+
+                <button type="button" class="btn" onclick="play()" id="control">| |</button>
+
+                <button type="button" class="btn" onclick="siguiente_cancion()">>></button>
+            </div>
+            <!-- Linea de tiempo-->
+            <div class="row justify-content-between time-line">
+                <div class="col-auto">
+                    <p id="actual-time">00:00</p>
+                </div>
+                <div class="col-auto">
+                    <p id="tiempo-cancion">--:--</p>
+                </div>
+            </div>
+        </div>
+
+        <input onclick="rangoTime()" min="0" max="359" type="range" class="custom-range" id="prog-time" />
+
+        <audio id="audio-player" src="./mp3/Bohemian Rhapsody.mp3">ERROR</audio>
+
+        <!-- Lista de canciones -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-auto">
+                    <h4>Orden de la canciones</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="music-order" class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <p class="nom-canc">Liar</p>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>+</p>
+                                        </div>
+                                        <div class="col">
+                                            <p class="handle">M</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="espacer" hidden></div>
+
+        <div class="container-fluid search-bar">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscar" id="music-input" />
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" onclick="search_btn()">Buscar</button>
+                    <button hidden id="cancel-btn" class="btn btn-outline-secondary" onclick="cancel_btn()">X</button>
+                </div>
+            </div>
+
+            <div class="search-list" id="searchResult" hidden>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="music-order" id="searchResult" class="search-list" hidden></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+        <script src="./scripts/musica.js"></script>
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </body>
+</html>

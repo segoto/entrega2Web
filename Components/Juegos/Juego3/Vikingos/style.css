@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+body {
+    padding: 15px;
+    overflow: hidden;
+    font-family: "Press Start 2P", sans-serif;
+    color: white;
+    background-color: #2c2f33;
+    user-select: none;
+}
+.arg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.arg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.forma {
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.infojuego {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.5em auto 0;
+}
+
+.infojuego p {
+    font-size: small;
+}
+
+.forma1 {
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    /*background: #5cb85c;*/
+}
+.forma2 {
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    /*background: #5cb85c;*/
+}
+.logjuego {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+.ocultarLog {
+    display: none;
+}
+
+#start {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 0 red;
+    background-color: blue;
+}
+#inicial:target #start {
+    display: none;
+}
+
+.start-text {
+    animation: pulse 1.2s ease-out infinite;
+}
+
+.start-emoji {
+    display: inline-block;
+    margin-left: 0.5em;
+    font-size: 1.4em;
+    text-shadow: none;
+}
+
+.boton-jugador {
+    background-image: url(../Vikingos/images/enano.png);
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+    background-position: center;
+    background-color: rgb(188, 99, 85);
+}
+
+#yo {
+    bottom: 10%;
+    position: relative;
+    vertical-align: bottom;
+    align-items: center;
+}
+#j1 {
+    bottom: 10%;
+    position: relative;
+    vertical-align: top;
+    align-items: left;
+}
+
+@keyframes pulse {
+    30% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+}
+
+.ocultarcircl {
+    display: none;
+}
+
+.circle-container {
+    position: relative;
+    width: 18em;
+    height: 18em;
+    padding: 2.8em;
+    /*2.8em = 2em*1.4 (2em = mitad anchura del link con img, 1.4 = raíz cuadrada(2))*/
+    border: dashed 1px;
+    border-radius: 50%;
+    margin: 3.5em auto 0;
+}
+.circle-container div {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4em;
+    height: 4em;
+    margin: -2em;
+}
+
+.botonesRemar {
+    display: inline;
+}
+.c2 {
+    display: flex;
+    align-items: center;
+}
+
+.circle-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#yo {
+    transform: translate(9em);
+    background-color: rgb(255, 255, 255);
+}
+#yo1 {
+    transform: translate(13em);
+}
+#yo2 {
+    transform: translate(5em);
+} /* 12em = 1/2 anchura del contenedor */
+
+#j1 {
+    transform: rotate(45deg) translate(9em) rotate(-45deg);
+    background-color: rgb(255, 0, 0);
+}
+#j11 {
+    transform: rotate(31deg) translate(12em) rotate(-31deg);
+}
+#j12 {
+    transform: rotate(70deg) translate(7.1em) rotate(-70deg);
+}
+
+#j2 {
+    transform: rotate(90deg) translate(9em) rotate(-90deg);
+    background-color: rgb(255, 255, 0);
+}
+#j21 {
+    transform: rotate(66deg) translate(10em) rotate(-66deg);
+}
+#j22 {
+    transform: rotate(114deg) translate(10em) rotate(-114deg);
+}
+
+#j3 {
+    transform: rotate(135deg) translate(9em) rotate(-135deg);
+    background-color: rgb(249, 107, 227);
+}
+#j31 {
+    transform: rotate(109deg) translate(7.5em) rotate(-109deg);
+}
+#j32 {
+    transform: rotate(147deg) translate(12.5em) rotate(-147deg);
+}
+
+#j4 {
+    transform: translate(-9em);
+}
+#j41 {
+    transform: translate(-5em);
+}
+#j42 {
+    transform: translate(-13em);
+}
+
+#j5 {
+    transform: rotate(225deg) translate(9em) rotate(-225deg);
+    background-color: rgb(255, 165, 0);
+}
+#j51 {
+    transform: rotate(247deg) translate(6em) rotate(-247deg);
+}
+#j52 {
+    transform: rotate(208deg) translate(11.5em) rotate(-208deg);
+}
+
+#j6 {
+    transform: rotate(270deg) translate(9em) rotate(-270deg);
+    background-color: rgb(173, 255, 47);
+}
+#j61 {
+    transform: rotate(296deg) translate(9em) rotate(-296deg);
+}
+#j62 {
+    transform: rotate(245deg) translate(9em) rotate(-245deg);
+}
+
+#j7 {
+    transform: rotate(315deg) translate(9em) rotate(-315deg);
+    background-color: rgb(0, 0, 255);
+}
+#j71 {
+    transform: rotate(330deg) translate(12em) rotate(-330deg);
+}
+#j72 {
+    transform: rotate(290deg) translate(6.5em) rotate(-290deg);
+}

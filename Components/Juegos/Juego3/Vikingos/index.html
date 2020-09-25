@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--Script js-->
+        <script type="text/javascript" src="index.js"></script>
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Vikings</title>
+    </head>
+
+    <body>
+        <div id="inicial">
+            <a id="start" href="#inicial" onclick="colorRandom()">
+                <span class="start-text" onClick="mostrar()"> 🚣🏼‍♂️ 🚣🏽 Empezar<span class="start-emoji">🚣🏻 🚣🏼‍♂️ </span> </span>
+            </a>
+        </div>
+        <div class="arg">
+            <p>Vikingos</p>
+            <div class="arg2">
+                Tu color es:
+                <div class="forma"></div>
+            </div>
+        </div>
+
+        <div class="infojuego">
+            <p id="ponerInfoJuego"></p>
+        </div>
+
+        <div id="jugadores" class="circle-container ocultarcircl">
+            <div id="c1">
+                <div class="botonesRemar">
+                    <input class="remar-derecha" id="yo1" type="checkbox" />
+                    <label class="remar-derecha" for="b1"></label>
+                    <input class="remar-izquierda" id="yo2" type="checkbox" />
+                    <label class="remar-izquierda" for="b2"></label>
+                </div>
+
+                <button class="boton-jugador" id="yo" onClick="turno('rgb(255, 255, 255)','yo')"></button>
+            </div>
+            <div id="c2">
+                <div class="botonesRemar">
+                    <input class="remar-derecha" id="j11" type="checkbox" />
+                    <label class="remar-derecha" for="b1"></label>
+                    <input class="remar-izquierda" id="j12" type="checkbox" />
+                    <label class="remar-izquierda" for="b2"></label>
+                </div>
+                <button class="boton-jugador" id="j1" onClick="turno('rgb(255, 0, 0)','j1')"></button>
+            </div>
+            <div>
+                <div class="botonesRemar">
+                    <input class="remar-derecha" id="j21" type="checkbox" />
+                    <label class="remar-derecha" for="b1"></label>
+                    <input class="remar-izquierda" id="j22" type="checkbox" />
+                    <label class="remar-izquierda" for="b2"></label>
+                </div>
+                <button class="boton-jugador" id="j2" onClick="turno('rgb(255, 255, 0)','j2')"></button>
+                <div>
+                    <div class="botonesRemar">
+                        <input class="remar-derecha" id="j31" type="checkbox" />
+                        <label class="remar-derecha" for="b1"></label>
+                        <input class="remar-izquierda" id="j32" type="checkbox" />
+                        <label class="remar-izquierda" for="b2"></label>
+                    </div>
+                    <button class="boton-jugador" id="j3" onClick="turno('rgb(249, 107, 227)','j3')"></button>
+                </div>
+                <div>
+                    <div class="botonesRemar">
+                        <input class="remar-derecha" id="j41" type="checkbox" />
+                        <label class="remar-derecha" for="b1"></label>
+                        <input class="remar-izquierda" id="j42" type="checkbox" />
+                        <label class="remar-izquierda" for="b2"></label>
+                    </div>
+                    <button class="boton-jugador" id="j4" onClick="turno('rgb(188, 99, 85)','j4')"></button>
+                </div>
+                <div>
+                    <div class="botonesRemar">
+                        <input class="remar-derecha" id="j51" type="checkbox" />
+                        <label class="remar-derecha" for="b1"></label>
+                        <input class="remar-izquierda" id="j52" type="checkbox" />
+                        <label class="remar-izquierda" for="b2"></label>
+                    </div>
+                    <button class="boton-jugador" id="j5" onClick="turno('rgb(255, 165, 0)','j5')"></button>
+                </div>
+                <div>
+                    <div class="botonesRemar">
+                        <input class="remar-derecha" id="j61" type="checkbox" />
+                        <label class="remar-derecha" for="b1"></label>
+                        <input class="remar-izquierda" id="j62" type="checkbox" />
+                        <label class="remar-izquierda" for="b2"></label>
+                    </div>
+                    <button class="boton-jugador" id="j6" onClick="turno('rgb(173, 255, 47)','j6')"></button>
+                </div>
+                <div>
+                    <div class="botonesRemar">
+                        <input class="remar-derecha" id="j71" type="checkbox" />
+                        <label class="remar-derecha" for="b1"></label>
+                        <input class="remar-izquierda" id="j72" type="checkbox" />
+                        <label class="remar-izquierda" for="b2"></label>
+                    </div>
+                    <button class="boton-jugador" id="j7" onClick="turno('rgb(0, 0, 255)','j7')"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="log" class="logjuego ocultarLog">
+            Vinkingo:
+            <div class="forma1"></div>
+            llama a vinkingo:
+            <div class="forma2"></div>
+        </div>
+        <!-- Popper.JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

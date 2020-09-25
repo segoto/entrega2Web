@@ -1,0 +1,125 @@
+body {
+    background-color: #2f3137;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+.white,
+h1 {
+    color: white;
+    font-size: 60px;
+}
+p,
+h6,
+.text {
+    color: white;
+    font-weight: bold;
+}
+.iconitos {
+    width: 40px;
+}
+.top-buffer {
+    margin-top: 50px;
+}
+.spotify {
+    background-color: #1bd75f;
+}
+.deezer {
+    background: rgb(131, 58, 180);
+    border: 0px;
+    background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+.card-img-top {
+    object-fit: contain;
+}
+
+.center-alignment {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.success {
+    background-color: green;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.error {
+    background-color: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.notPlayedYet {
+    background-color: gray;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.cartita {
+}
+#cardImage1,
+#cardImage2,
+#cardImage3,
+#cardImage4 {
+    object-fit: contain;
+    overflow: hidden;
+    height: 100px;
+}
+#cardTitle1,
+#cardTitle2,
+#cardTitle3,
+#cardTitle4 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#first {
+    color: gold;
+}
+#second {
+    color: silver;
+}
+#third {
+    color: #cd7f32;
+}

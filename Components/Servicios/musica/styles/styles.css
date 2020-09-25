@@ -1,0 +1,91 @@
+body {
+    background-color: #363940 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white;
+}
+
+button {
+    color: whitesmoke !important;
+}
+
+button:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.play-buttons {
+    padding-top: 15px;
+}
+
+.time-line {
+    padding-top: 20px;
+}
+
+#prog-time {
+    margin-bottom: 2em;
+}
+
+#titulo-Servicio {
+    margin: 10px 0;
+}
+
+#titulo-cancion {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    background-color: rgba(201, 76, 76, 0) !important;
+}
+
+.list-group-item {
+    border-bottom: 0px solid white !important;
+}
+
+#music-order {
+    margin-bottom: 3em;
+}
+
+.search-bar {
+    position: fixed;
+    bottom: 0px;
+    background-color: #363940;
+}
+
+.btn {
+    margin: 0 1em;
+}
+
+#espacer {
+    margin: 21%;
+}
+
+#prog-bar {
+    height: 20px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

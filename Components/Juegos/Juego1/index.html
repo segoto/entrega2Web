@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <title>Juego 1</title>
+    </head>
+
+    <body>
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-12 align-self-center">
+                    <div class="row justify-content-center align-content-center">
+                        <div class="col-auto align-self-center">
+                            <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 16 16"
+                                class="bi bi-music-note-beamed white"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"
+                                />
+                                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                            </svg>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <h1>Pogodi</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center top-buffer">
+                        <div class="col-auto align-self-center">
+                            <a href="./config/configGame.html">
+                                <button type="button" class="btn spotify">
+                                    <div class="container-fluid">
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto align-self-center text">Play</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="row justify-content-center top-buffer">
+                        <div class="col-auto align-self-center">
+                            <button type="button" class="btn spotify">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto align-self-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                x="0px"
+                                                y="0px"
+                                                class="iconitos"
+                                                viewBox="0 0 172 172"
+                                                style="fill: #000000"
+                                            >
+                                                <g
+                                                    fill="none"
+                                                    fill-rule="nonzero"
+                                                    stroke="none"
+                                                    stroke-width="1"
+                                                    stroke-linecap="butt"
+                                                    stroke-linejoin="miter"
+                                                    stroke-miterlimit="10"
+                                                    stroke-dasharray=""
+                                                    stroke-dashoffset="0"
+                                                    font-family="none"
+                                                    font-weight="none"
+                                                    font-size="none"
+                                                    text-anchor="none"
+                                                    style="mix-blend-mode: normal"
+                                                >
+                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                    <g fill="#ffffff">
+                                                        <path
+                                                            d="M86,0c-47.6256,0 -86,38.3744 -86,86c0,47.6256 38.3744,86 86,86c47.6256,0 86,-38.3744 86,-86c0,-47.6256 -38.3744,-86 -86,-86zM121.06671,126.36419c-1.3179,0 -2.66165,-0.67188 -3.97956,-1.34375c-12.5589,-7.26142 -27.77945,-11.24099 -44.31791,-11.24099c-9.2512,0 -18.52824,1.31791 -27.13341,3.30769c-1.31791,0 -3.30769,0.67187 -3.95373,0.67187c-3.30769,0 -5.29747,-2.66165 -5.29747,-5.29747c0,-3.30769 1.98978,-5.29747 4.6256,-5.94351c10.59495,-2.66166 21.16406,-3.97957 32.43089,-3.97957c18.5024,0 35.71274,4.6256 50.26142,13.23077c1.98978,1.31791 3.30769,2.63582 3.30769,5.94351c-0.64603,2.66165 -3.30769,4.65144 -5.94351,4.65144zM130.31791,103.85637c-1.98978,0 -3.30769,-0.64603 -4.6256,-1.31791c-13.90264,-8.60517 -33.07692,-13.90264 -54.91286,-13.90264c-10.56911,0 -20.49219,1.34375 -27.77945,3.30769c-1.98978,0.67187 -2.63581,0.67187 -3.97956,0.67187c-3.95373,0 -6.61538,-3.30769 -6.61538,-6.61538c0,-3.97956 1.98978,-5.94351 5.29747,-7.28726c9.92308,-2.63582 19.84615,-4.6256 33.74879,-4.6256c22.48197,0 44.31791,5.29747 61.52825,15.89243c2.63581,1.3179 3.95372,3.95372 3.95372,6.61538c0,3.95372 -2.63582,7.26142 -6.61538,7.26142zM140.91286,77.39483c-1.98978,0 -2.66165,-0.64603 -4.6256,-1.31791c-15.89243,-9.2512 -39.69231,-14.54868 -62.84615,-14.54868c-11.91287,0 -23.82572,1.31791 -34.42067,3.95373c-1.31791,0 -2.63582,0.67187 -4.6256,0.67187c-4.6256,0.67188 -7.93329,-3.30769 -7.93329,-7.93329c0,-4.6256 2.63582,-7.28726 5.94351,-7.93329c12.58473,-3.97957 25.8155,-5.29748 41.03606,-5.29748c25.11779,0 51.57933,5.29748 71.42548,16.53846c2.66165,1.31791 4.65144,3.95373 4.65144,7.93329c-0.67188,4.6256 -3.97957,7.93329 -8.60517,7.93329z"
+                                                        ></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="col-auto align-self-center">
+                                            <h6>Login with Spotify</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div> -->
+                    <!-- <div class="row justify-content-center top-buffer">
+                        <div class="col-auto align-self-center">
+                            <button type="button" class="btn deezer">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto align-self-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                x="0px"
+                                                y="0px"
+                                                width="50"
+                                                height="50"
+                                                viewBox="0 0 226 226"
+                                                style="fill: #000000"
+                                            >
+                                                <g
+                                                    fill="none"
+                                                    fill-rule="nonzero"
+                                                    stroke="none"
+                                                    stroke-width="1"
+                                                    stroke-linecap="butt"
+                                                    stroke-linejoin="miter"
+                                                    stroke-miterlimit="10"
+                                                    stroke-dasharray=""
+                                                    stroke-dashoffset="0"
+                                                    font-family="none"
+                                                    font-weight="none"
+                                                    font-size="none"
+                                                    text-anchor="none"
+                                                    style="mix-blend-mode: normal"
+                                                >
+                                                    <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                    <g fill="#ffffff">
+                                                        <path
+                                                            d="M176.28,63.28v9.04h36.16v-9.04zM94.92,76.84v9.04h36.16v-9.04zM176.28,76.84v9.04h36.16v-9.04zM94.92,90.4v9.04h36.16v-9.04zM176.28,90.4v9.04h36.16v-9.04zM13.56,103.96v9.04h36.16v-9.04zM94.92,103.96v9.04h36.16v-9.04zM135.6,103.96v9.04h36.16v-9.04zM176.28,103.96v9.04h36.16v-9.04zM13.56,117.52v9.04h36.16v-9.04zM94.92,117.52v9.04h36.16v-9.04zM135.6,117.52v9.04h36.16v-9.04zM176.28,117.52v9.04h36.16v-9.04zM13.56,131.08v9.04h36.16v-9.04zM54.24,131.08v9.04h36.16v-9.04zM94.92,131.08v9.04h36.16v-9.04zM135.6,131.08v9.04h36.16v-9.04zM176.28,131.08v9.04h36.16v-9.04zM13.56,144.64v9.04h36.16v-9.04zM54.24,144.64v9.04h36.16v-9.04zM94.92,144.64v9.04h36.16v-9.04zM135.6,144.64v9.04h36.16v-9.04zM176.28,144.64v9.04h36.16v-9.04zM13.56,158.2v9.04h36.16v-9.04zM54.24,158.2v9.04h36.16v-9.04zM94.92,158.2v9.04h36.16v-9.04zM135.6,158.2v9.04h36.16v-9.04zM176.28,158.2v9.04h36.16v-9.04z"
+                                                        ></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="col-auto align-self-center">
+                                            <h6>Login with Deezer</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+body,
+html {
+    height: 100%;
+}
+body {
+    background-color: #23272a;
+}
+.vertical-navbar {
+    background-color: #343638;
+}
+
+.juegos {
+    padding-left: 0;
+    padding-right: 0;
+}
+#music {
+    background-image: url(./assets/musical-notes.png);
+}
+#food {
+    background-image: url(./assets/comida.png);
+}
+#juegos {
+    background-image: url(./assets/juegos.png);
+}
+#food,
+#music,
+#juegos {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-color: #23272a;
+    border-style: none;
+    height: 45px;
+    width: 100%;
+    background-position: center;
+    background-color: #23272a;
+}
+.color-games {
+    color: white;
+    font-weight: bold;
+}
+@media screen and (min-width:768px){
+    .define-height-size{
+        height: 100%!important;
+    }
+}
+@media screen and (max-width:768px){
+    .define-height-size{
+        height:auto;
+    }
+}
+
