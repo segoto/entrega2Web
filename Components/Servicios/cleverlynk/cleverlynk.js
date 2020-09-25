@@ -5,12 +5,6 @@ var restaurantes = {
         src: "https://clynk.me/pacific-/6nEzDiEKlI/redirect",
         color: "white",
     },
-    Mercari: {
-        img: "https://cleverlynk-imgs.s3.amazonaws.com/resized-logos/resized-150-090620160656csjPOO.png",
-        des: "Mothers, Bakers and a Startup",
-        src: "https://mercari.co/",
-        color: "white",
-    },
     Remo: {
         img: "https://cleverlynk-imgs.s3.amazonaws.com/resized-logos/resized-150-remo-01.png",
         des: "DISFRUTA EL BALANCE.Somos una cocina oculta",

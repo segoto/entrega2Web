@@ -16,11 +16,11 @@
 
     <body>
         <div class="main">
-            <img id="imagen" src="images/farrita.png" alt="" width="500" height="220" />
+            <img id="imagen" src="./images/farrita.png" alt="" width="500" height="220" />
             <h1>Registrarte</h1>
             <div class="main-agileinfo">
                 <div class="agileits-top">
-                    <form action="login.html" method="post">
+                    <form action="./login.html" method="get">
                         <input class="text" type="text" name="Username" placeholder="Usuario" required="" />
                         <input class="text email" type="email" name="email" placeholder="Correo" required="" />
                         <input class="text" type="password" name="password" placeholder="Contraseña" required="" />
@@ -32,7 +32,7 @@
                             </label>
                             <div class="clear"></div>
                         </div>
-                        <a href="login.html"><input type="submit" class="button_active" value="Registrate" onClick="myFunction()" /></a>
+                        <a href="./login.html"><input type="submit" class="button_active" value="Registrate" onClick="myFunction()" /></a>
                         <script>
                             function myFunction() {
                                 alert("¡Registro exitoso!");

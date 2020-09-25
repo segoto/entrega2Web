@@ -863,3 +863,6 @@ input.checkbox:checked:after {
         padding: 1em 0 0;
     }
 }
+html,body{
+    height:100%;
+}

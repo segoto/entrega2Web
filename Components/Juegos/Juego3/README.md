@@ -17,3 +17,8 @@ br
 El código fue hecho puramente en html y js usando css para determinar los estilos más pertienentes y hacer del juego intuitivo y facil de entender. Por ahora todos los jugadores dependen de la intuicion de la persona que está usando la página, mientras se hace la jugabiliad automática.
 br
 Además se usó boostrap y el uso de un formato de texto para cambiar la tipografía. Para el js se hizo uso de listas, obtención de elementos html y su generación, uso de funciones arrow y declaracion de variables y uso de ciclos para iteraicón.
+<<<<<<< HEAD
+=======
+br
+Como observación es necesario recargar algunas veces la pagaina, pues apenas incia el juego debe aparecer un ciculo con todos los jugadores.
+>>>>>>> e2f453d4c732309e97051d2e208e69770c0539da

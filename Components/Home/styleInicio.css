@@ -48,3 +48,6 @@ h2.create-farita {
 .create-farrita {
     color: #fff;
 }
+html,body{
+    height:100%;
+}

@@ -1,26 +1,21 @@
-body {
+body{
     background-color: #363940 !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     color: white;
 }
 
-button {
+button{
     color: whitesmoke !important;
+    background-color: rgba(201, 76, 76, 0) !important;
+    border: 0px;
 }
 
-button:hover {
+button:hover{
     background-color: white !important;
     color: black !important;
 }
-
 .play-buttons {
     padding-top: 15px;
 }

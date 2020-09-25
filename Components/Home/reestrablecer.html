@@ -14,19 +14,33 @@
         <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet" />
     </head>
 
+    <head>
+        <title>Reestablecer contraseña Far-ita</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet" />
+    </head>
+
     <body>
         <div class="main">
-            <img id="imagen" src="images/farrita.png" alt="" width="500" height="220" />
+            <img id="imagen" src="./images/farrita.png" alt="" width="500" height="220" />
             <h1>¿Olvidaste tu contraseña?</h1>
             <div class="main-agileinfo">
                 <div class="agileits-top">
                     <p>Far-ita enviará las instrucciones para reestablecer tu contraseña al correo asociado a tu cuenta.</p>
-                    <form action="login.html" method="post">
+                    <form action="./login.html" method="get">
                         <input class="text" type="text" name="Email" placeholder="Correo" required="" style="margin-top: 20px" />
                         <div class="wthree-text">
                             <div class="clear"></div>
                         </div>
-                        <a href="login.html"><input type="submit" class="button_active" value="Enviar" onClick="myFunction()" /></a>
+                        <a href="./login.html"><input type="submit" class="button_active" value="Enviar" onClick="myFunction()" /></a>
                         <script>
                             function myFunction() {
                                 alert("¡Revisa tu correo!");

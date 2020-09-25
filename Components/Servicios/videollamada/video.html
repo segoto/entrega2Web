@@ -71,42 +71,40 @@
     <footer>
         <div id="nav" class="navbar">
             <ul id="nav-center" class="nav navbar-nav navbar-center">
-
-                <a><button  class=btn style="background-color: transparent;">
-                     <img id="micro" onclick="changeImageMicro()" src="./images/microfono-2.png" height=50; alt="Micro" > 
-                    </button></a>
-                <a><button class=btn style="background-color: transparent;">
-                     <img src="./images/llamada.png" height=50;  alt="Micro"> </button></a>
-                <a><button class=btn style="background-color: transparent;"> <img
-                            src="./images/Copia de camara-de-video.png" height=50; alt="Micro"> </button></a>
+                <button class=btn style="background-color: transparent;">
+                        <img id="micro" onclick="changeImageMicro()" src="./images/microfono-2.png" height=50;
+                            alt="Micro">
+                    </button>
+                <button class=btn href="Entrega2/Components/Home/intento.html" style="background-color: transparent;">
+                        <img src="./images/llamada.png" height=50; alt="Micro"> </button>
+                <button class=btn style="background-color: transparent;">
+                        <img id=cam onClick="changeImageCam()"  src="./images/noCamara.png" height=50;
+                            alt="Micro"> </button>
             </ul>
 
         </div>
     </footer>
 
     <script>
-        function openNav() 
-        {
+        function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
             document.getElementById("main").style.marginRight = "250px";
         }
 
-        function closeNav() 
-        {
+        function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginRight = "0";
         }
 
-        function changeImageMicro() 
-        {
+        function changeImageMicro() {
             var image = document.getElementById('micro');
-            if (image.src.match("bulbon")) 
-            {
-                image.src = "./images/microfono.png";
-            } 
-            else {
-                image.src = "./images/microfono-2.png";
-            }
+            if (image.src === "./images/microfono-2.png") { image.src = "./images/microfono.png"; }
+            else { image.src = "./images/microfono-2.png"; }
+        }
+        function changeImageCam() {
+            var image = document.getElementById('cam');
+            if (image.src === "./images/noCamara.png") { image.src = "./images/camara.png"; }
+            else { image.src = "./images/noCamara.png"; }
         }
     </script>
 

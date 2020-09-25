@@ -1,15 +1,3 @@
-const DERECHA = "DERECHA";
-const IZQUIERDA = "IZQUIERDA";
-
-const TURNO_YO = "TURNO_YO";
-const TURNO_J1 = "TURNO_J1";
-const TURNO_J2 = "TURNO_J2";
-const TURNO_J3 = "TURNO_J3";
-const TURNO_J4 = "TURNO_J4";
-const TURNO_J5 = "TURNO_J5";
-const TURNO_J6 = "TURNO_J6";
-const TURNO_J7 = "TURNO_J7";
-
 let colores = [
     "rgb(188, 99, 85)",
     "rgb(255, 0, 0)",
